@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Lugrasimo&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 /* font-family: 'Comfortaa', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Lobster', sans-serif;
@@ -26,12 +27,9 @@ body {
 .content {
     margin-top: 2rem;
 }
-.blog-box{
-   
-}
 
 .blogs .blog {
-    cursor: pointer;
+    border-left: 4px solid #ed5fc7;
     background: #ffffff77;
     transition: all .5s ease-in-out;
 }
@@ -72,47 +70,47 @@ body {
 .navbar-toggler:hover {
     color: #078bef;
 }
-.about-box{
+
+.about-box {
     padding: 2.5rem;
 }
 
+.single {
+    color: #1e1e1e;
+}
+
 @media(max-width: 850px) {
-    .col-4 {
+    .col-3 {
         width: 100% !important;
     }
-
     .navbar-nav {
         text-align: center;
     }
- .col-9{
-    width: 100% !important;
- }
 }
 
 @media(max-width: 650px) {
-
     .navbar-collapse {
         margin-top: .5rem;
         border-top: 3px solid #8fc8f3;
     }
-
     .navbar-brand {
         font-size: 1.5rem !important;
     }
-
     .content {
         margin-top: 0rem;
     }
-
     .copyright {
         text-align: center;
         padding-right: 0rem;
     }
-    .about-box{
+    .about-box {
         padding: 1rem;
     }
     .about-box p,
-    footer p{
+    footer p {
         font-size: .6rem;
+    }
+    .col-3 {
+        width: 100% !important;
     }
 }

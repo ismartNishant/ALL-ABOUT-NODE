@@ -31,18 +31,18 @@
 
             <div class="container create-blogs content ">
                 <div class="col-4 m-auto shadow blog-form p-4">
-                    <form>
+                    <form action="/blogs" method="post">
                         <div class="mb-3">
                             <label for="title" class="form-label">Blog Title</label>
-                            <input type="text" class="form-control" id="title" required>
+                            <input type="text" class="form-control" name="title" id="title" required>
                         </div>
                         <div class="mb-3">
                             <label for="snippet" class="form-label">Blog Snippet: </label>
-                            <input type="text" class="form-control" id="snippet" required>
+                            <input type="text" class="form-control" name="snippet" id="snippet" required>
                         </div>
                         <div class="mb-3">
                             <label for="blog-body" class="form-label">Blog Body: </label>
-                            <textarea class="form-control" id="blog-body" required></textarea>
+                            <textarea class="form-control" name="body" id="blog-body" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>
